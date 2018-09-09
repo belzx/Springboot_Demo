@@ -55,5 +55,13 @@
 			<artifactId>hsweb-web-core</artifactId>
 			<version>2.2.1</version>
 		</dependency>
+		<dependency>
+			<groupId>com.atomikos</groupId>
+			<artifactId>transactions-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jul-to-slf4j</artifactId>
+		</dependency>
   </dependencies>
 </project>

@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.lizhi.muitl.datasource.config.DynamicDataSourceContextHolder;
 import com.lizhi.mybatis.entity.Message;
 import com.lizhi.mybatis.mapper.MessageMapper;
 import com.lizhi.mybatis.service.IMessageService;

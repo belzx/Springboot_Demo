@@ -24,10 +24,11 @@ public class AopAuthorizeValidatorAutoConfiguration {
     static class ControllerAuthorizeValidator extends AopAuthorizeValidator {
         @Around(value = "execution(* com.lizhi.mybatis.controller..*Controller..*(..))||@annotation(org.hsweb.web.core.authorize.annotation.Authorize)")
         public Object around(ProceedingJoinPoint pjp) throws Throwable {
-        	System.out.println("sdasdas");
-            boolean access = super.validate(pjp);
-            if (!access) throw new AuthorizeForbiddenException("无权限", 403);
-            return pjp.proceed();
+//        	System.out.println("sdasdas");
+//            boolean access = super.validate(pjp);
+//            if (!access) throw new AuthorizeForbiddenException("无权限", 403);
+//            return pjp.proceed();
+        	return  pjp.proceed();
         }
     }
 }

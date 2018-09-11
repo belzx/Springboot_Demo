@@ -18,7 +18,8 @@ public interface MessageRepository extends JpaRepository<Message, String>
      * 1： jpa 可以自动化根据方法名称查询 结果
      *
      */
-    Message findOneById(Integer account);
+    Message findOneById(Integer id);
+    Message deleteById(Integer id);
 
     List<Message> findFirst10ByNickNameLike(String nickName); //属性的名称必须与bean中的保持一致
 
@@ -53,11 +54,11 @@ public interface MessageRepository extends JpaRepository<Message, String>
     @Query("update Message set NICK_NAME = ?1 where id = ?2")
     int setName(String name , Integer id);
 
-    /**
-     * 使用rest风格的查询
-     * @param id
-     * @return
-     */
-    Message findByIdStartsWith(int id);
+//    /**
+//     * 使用rest风格的查询
+//     * @param id
+//     * @return
+//     */
+//    Message findByIdStartsWith(int id);
 
 }

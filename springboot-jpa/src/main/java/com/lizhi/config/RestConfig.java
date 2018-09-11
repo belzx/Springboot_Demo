@@ -6,5 +6,4 @@ import org.springframework.context.annotation.Import;
 @Configuration
 @Import(RepositoryRestMvcConfig.class)
 public class RestConfig {
-
 }
